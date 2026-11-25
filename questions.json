@@ -1,0 +1,52 @@
+[
+  {
+    "id": "NEET-MOCK-001",
+    "subject": "Physics",
+    "topic": "Electrostatics",
+    "difficulty": "Easy",
+    "question": "The SI unit of electric charge is:",
+    "options": [
+      { "id": "A", "text": "Ampere" },
+      { "id": "B", "text": "Coulomb" },
+      { "id": "C", "text": "Volt" },
+      { "id": "D", "text": "Ohm" }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Electric charge is measured in coulombs.",
+    "marks": { "correct": 4, "incorrect": -1, "unattempted": 0 }
+  },
+  {
+    "id": "NEET-MOCK-002",
+    "subject": "Physics",
+    "topic": "Vectors",
+    "difficulty": "Medium",
+    "question": "Which of the following are vector quantities?",
+    "options": [
+      { "id": "A", "text": "Velocity" },
+      { "id": "B", "text": "Mass" },
+      { "id": "C", "text": "Force" },
+      { "id": "D", "text": "Temperature" }
+    ],
+    "correctAnswer": ["A", "C"],
+    "explanation": "Velocity and force have both magnitude and direction; mass and temperature are scalars.",
+    "marks": { "correct": 4, "incorrect": -1, "unattempted": 0 }
+  },
+  {
+    "id": "NEET-MOCK-003",
+    "subject": "Biology",
+    "topic": "Cell Biology",
+    "difficulty": "Easy",
+    "type": "TRUE_FALSE",
+    "question": "Mitochondria are known as the powerhouse of the cell.",
+    "options": [
+      { "id": "A", "text": "True" },
+      { "id": "B", "text": "False" }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Mitochondria produce most of the cell's ATP through cellular respiration.",
+    "marks": { "correct": 4, "incorrect": -1, "unattempted": 0 },
+    "tags": ["neet", "cell"],
+    "language": "EN",
+    "source": "Written by our faculty"
+  }
+]
