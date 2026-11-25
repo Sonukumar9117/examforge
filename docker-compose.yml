@@ -1,0 +1,27 @@
+services:
+  forgeExam:
+    image: examforge:v1
+    container_name: forgeExam
+    ports:
+      - 8080:8080
+    env_file:
+      - .env
+    depends_on:
+      db_service:
+        condition: service_healthy
+  
+  db_service:
+    image: mysql:8
+    container_name: forge_db
+    ports:
+      - 3307:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD}
+
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-p${MYSQL_PASSWORD}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
